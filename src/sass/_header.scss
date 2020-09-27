@@ -1,158 +1,251 @@
 @charset "UTF-8";
-
-.topNavWrap,
-.docHeadWrap,
-#topTab {
-    width: 1090px;
-    margin: 0 auto;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
-.topAd {
-    height: 80px;
+.header{
     position: relative;
-    overflow: hidden;
-    width: 100%;  
-}
-.topAd a {
-        position: absolute;
-        left: 50%;
-        top: 0;
-    }
-.topAd img {
-        position: relative;
-        left: -50%;
-        top: 0;
-    }
-
-#topNav{
-    background: #000;
-    position: relative;
+    z-index: 106;
+    background-color: #000;
     border: 1px solid #ededee;
-    color: #999; 
+    color: #ccc;
 }
-
-#topNav .topNavWrap{
-    position: relative;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 auto;
-}
-
-.topNavLeft {
-    float: left;   
-}
-
-.topNavLeft.login {
-        margin-left: 16px;
-    }
-
-.topNavLeft.sep{
-        padding: 0 10px;
-    }
-
-.topNavLeft2{
-    float: left;
-    padding-left: 30px;
-    
-    &:hover .phone{
-    display: block;
-}
-}
-
-.topNavLeft2 a{
-    position: relative;
-    }
-.topNavLeft2 a .phone{
-    position: absolute;
-    background: #fff;
-    left: -36px;
-    top: 30px;
-    padding: 5px 5px 0;
-    border: 1px solid  rgb(228, 228, 228);
-    display: none;
-    z-index: 100000000;
-}
-.topNavLeft2 a .phone img{
-    width: 116px;
-    height: 116px;
-}
-
-.topNavRight{
-    float: left;
-}
-.topNavRight li{
-    float: left;
-}
-.topNavRight li .topNav1{
-    padding: 0 14px 0 8px;
-}
-.topNavRight li:nth-child(3){
-    .topNavmenu a:nth-child(4){
-        border-bottom: 1px solid #e8e8ea ;
-    }
-    .topNavmenu a:nth-child(7){
-        border-bottom: 1px solid #e8e8ea;
-    }
-    .topNavmenu a:nth-child(9){
-        border-bottom: 1px solid #e8e8ea;
-    }
-}
-.topNavRight li:nth-child(2){
-    .topNavmenu a:nth-child(1){
-        border-bottom: 1px solid #e8e8ea;
-    }
-}
-.topNav2{
+.headerNav{
     position: relative;
     zoom: 1;
-    padding: 0 24px 0 16px!important;
-}
-.topNavmenu {
-    position: absolute;
-    left: -1px;
-    top: 30px;
-    box-shadow: 0 1px 1px #000;
-    padding: 4px 15px 12px 14px;
-    display: none;
-}
-.topNavmenu a{
-    display: block;
-    word-wrap: normal;
-    white-space: nowrap;
-    height: 28px;
-    line-height: 28px;
-    cursor: pointer;
-}
-.topNav2:hover {
-    background: #fff;
-}
-.topNav2:hover .topNavmenu {
-    display: block;
-    background-color: #fff;
-    border: 1px solid #e8e8ea;
-    border-top: 0;
-}
-.topNav2:hover a:hover{
-    color: red;
-}
-#search{
+    height: 30px;
+    width: 1090px;
+    background-color: #000;
     margin: 0 auto;
 }
-.searchWrap{
-    position: relative;
-    height: 100px;
+.headerNav .headerNavLeft{
+    float: left;  
+    width: 194px;
 }
-.logo_kaola_new{
+.headerNav .headerNavLeft span{
+    font-size: 12px;
+    line-height: 30px;
+}
+.headerNav .headerNavLeft a{
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+}
+.headerNav .headerNavLeft .login{
+    margin-left: 20px;
+}
+.headerNav .headerNavLeft .registry{
+    margin-left: 20px;
+}
+.headerNav .headerNavLeft2 {
+    position: relative;
+    zoom: 1;
+    float: left;
+    width:78px;
+}
+.headerNav .headerNavLeft2 a{
+    font-size: 12px;
+    color: #999;
+    margin-left: 22px;
+    line-height: 30px;
+}
+.headerNavRight {
+    float: right;
+    position: relative;
+    right: -3px;
+    line-height: 30px;
+}
+.headerNavRight li{
+    float: left;
+}
+.headerNavRight .headerNavRight2{
+    position: relative;
+    float: left;
+}
+.headerNavRight .headerNavRight2 a{
+    font-size: 12px;
+    color: #999;
+    margin-left: 22px;
+    line-height: 30px;
+}
+.search{
+    background-color: #fff;
+    z-index: 103;
+}
+.search .searchcent{
+    position: relative;
+    width: 1090px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.search .searchcent .searchLeft{
+    width: 330px;
+    position: relative;
+}
+.search .searchcent .searchLeft .logo-kaolao{
     position: absolute;
-        left: 0;
-        top: 20px;
-        width: 330px;
-        height: 65px;
-        line-height: 65px;
-        outline: none;
-        cursor: pointer;
-        z-index: 9;
-        background-repeat: no-repeat;
-        background-position: 0;
-        background-size: auto 65px;
-        background-image: url();
+    left: 0;
+    top: 20px;
+    width: 330px;
+    height: 65px;
+    line-height: 65px;
+    outline: none;
+    cursor: pointer;
+    z-index: 9;
+    background-repeat: no-repeat ;
+    background-position: 0;
+    background-size: auto 65px ;
+    background-image:url("../img/kaolao.png") ;
+    margin: 0 auto;
+}
+
+.search .searchcent .search2{
+    position: absolute;
+    left: 350px;
+    top: 33px;
+    z-index: 73;
+    width: 510px;
+    height: 40px;
+    padding-left: 1px;
+    background-color: red;
+    border-radius: 40px;
+}
+
+.search .searchcent .search2 .searchwrap{
+    float: left;
+    margin: 2px 1px;
+    padding: 6px 39px 6px 30px;
+    background-color: #fff;
+    border-radius: 24px 0 0 24px;
+    width: 410px;
+    height: 24px;
+}
+#searchinput{
+    width: 410px;
+    height: 24px;
+    line-height: 24px;
+    border: 0;
+    font-size: 13px;
+    color: #999;   
+}
+
+.search .searchcent .search2 .searchpic{
+    width: 60px;
+    height: 40px;
+    background-image: linear-gradient(270deg, #ff2e68, #ff0003);
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    z-index:110;
+    background: url("https://kaola-haitao.oss.kaolacdn.com/6e4da089-9347-4dc2-be19-4962832a4a5c.png?x-oss-process=image/resize,w_40,h_0/quality,q_85&v=1") no-repeat 50% red;
+    background-size: 40%;
+}
+.search .searchcent .search2 .searchpic1{
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    width: 14px;
+    height: 14px;
+    background: url(../img/icon1-832edc2b58.png) no-repeat;
+    background-position:-466px -667px ;  
+}
+.search .searchcent .searchshop{
+    display: block;
+    position: absolute;
+    right: 76px;
+    top: 33px;
+    width: 106px;
+    height: 36px;
+    background-color: #fff;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 36px;
+    border: 2px solid #ff1e32;
+}
+.search .searchcent .searchshop i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    margin-bottom: -5px;
+    background: url("https://kaola-haitao.oss.kaolacdn.com/14f1eb69-f7c0-4d4f-95d8-4aee8e2e1f1b.png?x-oss-process=image/resize,w_40,h_0/quality,q_90") no-repeat 0 0;
+    background-size:90% ;
+}
+.search .searchcent .searchshop span{
+    color: #000;
+}
+
+.secondarybox{
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    z-index: 102;
+}
+.secondarybox .secondarymenu{
+    position: relative;
+    height: 40px;
+    zoom: 1;
+    width: 1090px;
+    margin: 0 auto;
+    line-height: 40px;
+    z-index: 102;
+}
+.secondarybox .secondarymenu .secondarycats{
+    float: left;
+    height: 40px;
+    width: 164px;
+    background: linear-gradient(90deg,red,#ff3264);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0;
+    overflow: visible;
+}
+.secondarybox .secondarymenu .secondarycats .secondarlevel{
+    display: inline-block;
+    height: 40px;  
+    line-height: 40px;
+    width: 164px;
+    text-align: left;
+    border-bottom: 1px solid #ff5160;
+}
+.secondarlevel .lineicon{
+    display: inline-block;
+    margin: 0 24px 0 15px;
+    width: 15px;
+    height: 12px;
+    overflow: hidden;
+}
+.secondarlevel .lineicon i{
+    width: 15px;
+    height: 0px;
+    border-top: 2px solid #ddd;
+    display: block;
+    margin-bottom:3px ;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.secondarycats .list{
+    background: linear-gradient(90deg,red,#ff3264);
+}
+.secondarycats .list li{
+    height: 38.333333333333336px;
+    line-height: 38.333333333333336px;
+    padding-left: 10px;
+    width: 151px;
+    cursor: pointer;
+    text-align: left;
+    padding-right: 3px;
+}
+.secondarycats .list li .icon{
+    // display: none;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    padding: 0 20px 0 4px;
 }

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.brand{
+    position: relative;
+    width: 1100px;
+    height: 429px;
+    margin: 0 auto;
+    background-color: #ff52dd;
+}
+.brand .brandtop{
+    position: relative;
+    width: 1100px;
+    height: 74px;
+    background-color: yellowgreen;
+}
+.brand .brandbottomLeft{
+    position: absolute;
+    width: 219px;
+    height: 355px;
+    background-color: thistle;
+}
+.brand .brandbottomRight{
+    position: absolute;
+    top: 74px;
+    right: 0;;
+    width: 881px;
+    height: 355px;
+    background-color: tomato;
+}
+.like{
+    position: relative;
+    width: 1100px;
+    height: 445px;
+    background-color: turquoise;
+    margin: 0 auto;
+}
+.like .liketop{
+    width: 1100px;
+    height: 63px;
+    background-color: yellow;
+}
+.like .likebottom{
+    position: absolute;
+    left: -10px;
+    width: 1120px;
+    height: 382px;
+    background-color: thistle;
+    margin: 0 auto;
+}
+.like .likebottom .likebottombox{
+    float: left;
+    width: 260px;
+    height: 382px;
+    margin: 0 10px; 
+    background-color: violet;
+}
+

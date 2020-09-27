@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.footwrap1{
+    position: relative;
+    height:147px ;
+    margin-top: 80px;
+    background-color: violet;
+}
+.footwrap1 .footbox1{
+    width: 1100px;
+    height:147px ;
+    margin: 0 auto;
+    background-color: yellow;
+}
+.footwrap2{
+    height:263px ;
+    background-color: salmon;
+}
+.footwrap2 .footbox2{
+    width: 1100px;
+    height:263px ;
+    margin: 0 auto;
+    background-color:seagreen;
+}
+.footwrap3{
+    height:151.8px ;
+    background-color: darkcyan;
+}
+.footwrap3 .footbox3{
+    width: 1100px;
+    height:151.8px ;
+    margin: 0 auto;
+    background-color: darkorchid;
+}
