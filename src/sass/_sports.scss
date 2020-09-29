@@ -10,13 +10,79 @@
 .sport .sporttop{
     position: relative;
     height: 74px;
+    padding-top: 25px;
+    border-top: 1px solid #e9e9e9;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #ccc;
+    font-size: 14px;
+}
+.sport .sporttop h3{
+    margin-right: 20px;
+    float: left;
+}
+.sport .sporttop h3 span{
+    font-size: 22px;
+    color: #333;
+    font-weight: 700;
+}
+.sport .sporttop ul{
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+    color: #999;
+}
+.sport .sporttop ul li{
+    float: left;
+    margin-right: 14px;
+}
+.sport .sporttop ul .last{
+    margin-right: 24px;
 }
 .sport .sportLeft{
     position: relative;
     width: 330px;
     height: 541px;
     background-color: purple;
+}
+
+.sport .sportLeft ul{
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    zoom: 1;
+}
+.sport .sportLeft ul li{
+    float: left;
+    margin: 0 18px 8px 0;
+    width: 82px;
+    height: 42px;
+}
+.sport .sportLeft li a{
+    display: block;
+    height: 18px;
+    padding: 11px 0;
+    overflow: hidden;
+    font-size: 12px;
+    color: #333;
+    border-radius: 40px;
+    background:#fff ;
+    border: 1px solid #eee;
+    width: 80px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    text-decoration: none;
+    outline: none;
+}
+.sport .sportLeft li a:hover{
+    color: brown;
+}
+
+.sport .sportLeft li span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 82px;
+    overflow: hidden;
 }
 .sport .sportCenter{
     position: absolute;
@@ -27,8 +93,7 @@
     background-color: seagreen;
 }
 .sport .sportCenter .sportCenterbox{
-    position: absolute;
-    text-align: center;
+    float: left;
     width: 274px;
     height: 269px;
     z-index: 102;
@@ -44,9 +109,109 @@
     height: 541px;
     background-color: yellowgreen;
 }
+.sport .sportRight .sportRighttop{
+    font-size: 16px;
+    line-height: 58px;
+    padding: 0 0 0 10px;
+    color: #333;
+    font-weight: 700;
+    height: 58px;
+    border: 1px solid #e9e9e9;
+    border-left-width: 0;
+}
+.sport .sportRight .pagebox{
+    position: absolute;
+    top: 0;
+    right: 9px;
+}
+.sport .sportRight table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.sport .sportRight tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.sport .sportRight tbody tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.sport .sportRight tbody td{
+    text-align: center;
+}
+.sport .sportRight tbody .icon{
+    display: inline-block;
+    margin: 0 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 0;
+    font-size: 0;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 107;
+}
+.sport .sportRight tbody .icon:active{
+    background: #000;
+}
+.sport .sportRight .tab_content{
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.tab_box{
+    position: relative;
+    .tab_content{
+        position: absolute;
+    }
+}
+.sportRight .tab_content .item{
+    flex-direction: column;
+    border-bottom: 1px dotted #e9e9e9;
+    padding: 27px 14px 0 0;
+    height: 92px;
+    background-color: darkmagenta;
+}
 .sport .sportbottom{
     width: 1100px;
     height: 218px;
     margin: 20px 0 40px;
     background-color: teal;
+}
+.sport .sportbottom .sportbottomtop{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    text-indent: 20px;
+    line-height: 48px;
+    height: 48px;
+    border-bottom: 1px solid #eaeaea;
+}
+.sport .sportbottom .sportbottombox{
+    position: relative;
+    width: 1100px;
+    height: 167px;
+}
+.sport .sportbottom .pic1{
+    float: left;
+   
+    width: 219px;
+    height: 167px;
+    zoom: 1;
+    text-align: center;
+    background-color: aqua;
+}
+.sport .sportbottom .pic{
+    float: left;
+    
+    width: 219px;
+    height: 167px;
+    zoom: 1;
+    border-left: 1px solid #e9e9e9;
+    text-align: center;
+    background-color: aqua;
 }

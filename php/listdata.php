@@ -1,25 +1,28 @@
 <?php
 include "conn.php";
 
-//  header('Access-Control-Allow-Origin:*');//跨域访问的域名，*表示所有
-//  header('Access-Control-Allow-Method:POST,GET');//跨域支持的请求方式。
-// $pagesize = 10; //单个页面展示的数据条数
-$sql = "select * from jingdong"; //获取所有的数据
-$result = $conn->query($sql); //获取数据的结果集(记录集)
+//解决跨域
+ header('Access-Control-Allow-Origin:*');//跨域访问的域名，*表示所有
+ header('Access-Control-Allow-Method:POST,GET');//跨域支持的请求方式。
 
-// $num = $result->num_rows; //记录集的总条数  22
+$pagesize = 20; //单个页面展示的数据条数
 
-// $pagenum = ceil($num / $pagesize); //获取页数  3
+$result = $conn->query("select * from goods"); //获取数据的结果集(记录集)
+
+$num = $result->num_rows; //记录集的总条数  22
+
+$pagenum = ceil($num / $pagesize); //获取页数  3
 
 
 //获取前端的传来的页面，根据页码查询对应的数据，返回给前端。
-// if (isset($_GET['page'])) {
-//     $pagevalue = $_GET['page'];
-// } else {
-//     $pagevalue = 1;
-// }
+if (isset($_GET['page'])) {
+    $pagevalue = $_GET['page'];
+} else {
+    $pagevalue = 1;
+}
 
-// $page = ($pagevalue - 1) * $pagesize;
+//计算偏移量
+$page = ($pagevalue - 1) * $pagesize;
 
 //limit
 //limit接收一个或者两个数字参数(整数)
@@ -29,8 +32,8 @@ $result = $conn->query($sql); //获取数据的结果集(记录集)
 //limit 10,10  从偏移量5开始 取10条
 //limit 20,10 从偏移量14开始 取10条
 
-// $sql1 = "select * from taobaogoods limit $page,$pagesize";
-// $res = $conn->query($sql1);
+$sql1 = "select * from goods limit $page,$pagesize";
+$res = $conn->query($sql1);
 
 
 //通过二维数组输出

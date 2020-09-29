@@ -4,6 +4,10 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    // background-color: #f0f0f0;
+}
+a:hover{
+    text-decoration: underline;
 }
 .header{
     position: relative;
@@ -19,6 +23,9 @@
     width: 1090px;
     background-color: #000;
     margin: 0 auto;
+}
+.headerNav a{
+    text-decoration: none;
 }
 .headerNav .headerNavLeft{
     float: left;  
@@ -45,12 +52,38 @@
     float: left;
     width:78px;
 }
+.headerNavLeft2 span{
+    position: absolute;
+    margin: 0 auto;
+    width: 120px;
+    height: 180px;
+    left: -45px;
+    top :35px;
+    padding: 5px 5px 0;
+    display: none;
+    text-align: center;
+    font-size:14px;
+    line-height: 15px;
+    color: #333;
+    background-color: #fff;
+    img{
+        
+        width: 116px;
+        height: 116px;
+    }
+}
 .headerNav .headerNavLeft2 a{
     font-size: 12px;
     color: #999;
     margin-left: 22px;
     line-height: 30px;
-}
+    }
+.headerNavLeft2 a:hover{
+        span{
+            display: block;
+        }
+    }
+
 .headerNavRight {
     float: right;
     position: relative;
@@ -64,11 +97,70 @@
     position: relative;
     float: left;
 }
+.headerNavRight3{
+    position: relative;
+    float: left;
+}
+
+.headerNavRight3 a{
+    font-size: 12px;
+    color: #999;
+    margin-left: 22px;
+    line-height: 30px;
+}
+.headerNavRight3 .menubox{
+    position: relative;
+    z-index: 202;
+    border: 1px solid transparent;
+    left: -3px;
+    top: -1px;
+}
+
 .headerNavRight .headerNavRight2 a{
     font-size: 12px;
     color: #999;
     margin-left: 22px;
     line-height: 30px;
+}
+.headerNavRight .menu{
+    position: absolute;
+    left: 15px;
+    text-align: center;
+    top:30px;
+    border-top: 0;
+    box-shadow: 0 1px 1xp rgba(0, 0, 0, .12);
+    // padding: 4px 15px 12px 14px;
+    display: none;
+    background-color: #fff;
+}
+.headerNavRight .menu a{
+    margin-top: -12px;
+    margin-left: 6px;
+    display: block;
+    white-space: nowrap;
+    // padding-top: -20px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.headerNavRight .menu span{
+    position: relative;
+    float: left;
+    font-size: 12px;
+    color: #000;
+    zoom: 1;
+    
+}
+.headerNavRight3 .menubox:hover{
+    .menu{
+        display: block;
+    }
+}
+.headerNavRight3 .menu a:hover{
+    span{
+        color: red;
+    }
 }
 .search{
     background-color: #fff;
@@ -242,10 +334,132 @@
     text-align: left;
     padding-right: 3px;
 }
+.secondarycats .list img{
+    border: 0;
+}
 .secondarycats .list li .icon{
-    // display: none;
     width: 20px;
     height: 20px;
     vertical-align: middle;
     padding: 0 20px 0 4px;
 }
+
+.secondarycats .list li .iconhv{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    padding: 0 20px 0 4px;
+    display: none;
+}
+.secondarycats .list li span{
+    display: inline-block;
+    // float: left;
+    vertical-align: middle;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+.secondarycats .list li .seg{
+    display: block;
+    position: relative;
+    bottom: 2px;
+    left: -7px;
+    width: 154px;
+    height: 1px;
+    background: #ff5160;
+    margin-top: -1px;
+}
+.secondarycats .secondarbox{
+    transition: height .4s;
+    position: absolute;
+    z-index: 75;
+    top: 40px;
+    left: 164px;
+    width: 930px;
+    overflow: hidden;
+    max-height: 459px;
+    height: 459px;
+    background: #fff;
+    border: 1px solid #ff1a33;
+    border-left-width: 0;
+    text-align: left;
+    color: #333;
+    cursor: auto;
+    display: none;
+}
+.secondarycats .secondarbox .boxLeft{
+    margin: 0 20px 0 15px;
+    width: 658px;
+    max-height: 461px;
+    float: left;
+    overflow: hidden;
+}
+.secondarycats .secondarbox .boxLeft .boxLeft1{
+    height: 187px;
+    width: 685px;
+    float: left;
+    zoom: 1;
+}
+.secondarycats .secondarbox .boxLeft2{
+    width: 50%;
+    float: left;
+    vertical-align: top;
+    position: relative;
+}
+.secondarycats .secondarbox .boxRightTop{
+    height: 322px;
+    overflow: hidden;
+    width: 218px;
+    padding: 9px 8px 0 11px;
+    background: #f6f6f6;
+    float: left;
+}
+.secondarycats .secondarbox .boxRightTop1 img{
+    float: left;
+    width: 104px;
+    height: 104px;
+    border: 1px solid #eaeaea;
+    margin: 0 3px 2px 0;
+}
+.secondarycats .secondarbox .boxRightBottom{
+    width: 237px;
+    box-sizing: border-box;
+    padding: 20px 18px 20px 11px;
+    background: #f6f6f6;
+    float: left;
+}
+.secondarycats .secondarbox .boxRightBottom img{
+    width: 215px;
+    height: 88px;
+    border-radius: 3px;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+#Tab{
+    position: relative;
+    height: 40px;
+    width: 550px;
+    z-index: 72;
+    float: left;
+    padding-left: 25px;
+}
+#Tab li{
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+#Tab li a{
+    color: #000;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    
+}
+#Tab li a:hover{
+        color: red;
+    }
